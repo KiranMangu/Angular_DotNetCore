@@ -1,0 +1,23 @@
+<p>
+  product-list works!
+</p>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Availability</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='product of products'>
+        <td >{{product.Id}}</td>
+        <td>{{product.Name}}</td>
+        <td>{{product.Brand}}</td>
+        <td>{{product.Cost}}</td>
+        <td>{{product.Availability}}</td>
+      </tr>
+    </tbody>
+  </table>
